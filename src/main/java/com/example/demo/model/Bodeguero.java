@@ -24,6 +24,6 @@ public class Bodeguero {
     @Column(nullable = false, length = 100)
     private String apellido;
 
-    @Column(nullable = false, length = 100)
+    @Column(nullable = false)
     private Boolean estado;
 }
