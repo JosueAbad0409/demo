@@ -27,4 +27,8 @@ public class Bodega {
     @Column(nullable = false)
     private Boolean estado;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_bodeguero", nullable = false)
+    private Bodeguero bodeguero;
+
 }
